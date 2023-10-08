@@ -77,8 +77,8 @@ img {
 }
 
 .btn-branding-outline {
-  background-color: var(--secondary-color);
-  color: var(--branding-color);
+  background-color: var(--branding-color);
+  color: var(--primary-color);
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
