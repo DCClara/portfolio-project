@@ -16,7 +16,7 @@ body {
 }
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 70px;
+  font-size: 90px;
   color: var(--primary-color);
 }
 h2 {
@@ -39,7 +39,7 @@ p {
   color: var(--secondary-color);
 }
 img {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .main-background {
@@ -49,7 +49,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 90vh;
 }
 .hero {
   background: var(--backround-color);
@@ -81,6 +81,17 @@ img {
 
 .container h3 {
   margin-bottom: 40px;
+  font-size: 40px;
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-branding-outline {
@@ -89,6 +100,28 @@ img {
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
+}
+.about-section header {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/567/original/gold-purple-bg.png?1696801846);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.about-section h1 {
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 900px) {
