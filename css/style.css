@@ -171,4 +171,7 @@ img {
     margin-bottom: 15px;
     font-size: 20px;
   }
+  .about-section p {
+    text-align: center;
+  }
 }
