@@ -215,6 +215,14 @@ header {
 .project-container h4 {
   font-size: 40px;
 }
+
+.contact-container {
+  margin-top: 300px;
+}
+.contact-container h2 {
+  font-size: 90px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 60px;
@@ -223,10 +231,13 @@ header {
     font-size: 20px;
   }
   p {
-    font-size: 18px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
   }
   .main-background {
     height: 40vh;
+    margin-top: 70px;
   }
   .hero {
     margin: 0;
@@ -249,9 +260,7 @@ header {
     background-color: #4b3a70;
     color: #b7a3ca;
   }
-  .my-logo {
-    width: 30px;
-  }
+
   .hero {
     padding: 80px 20px;
   }
@@ -262,7 +271,22 @@ header {
     margin-bottom: 15px;
     font-size: 20px;
   }
-  .about-section p {
-    text-align: center;
+  .about-section header {
+    margin-top: 70px;
+    height: 40vh;
+  }
+  .about-section header h2 {
+    font-size: 20px;
+  }
+
+  .work-page header {
+    margin-top: 70px;
+    height: 40vh;
+  }
+  .project-container h3 {
+    font-size: 20px;
+  }
+  .project-container h4 {
+    font-size: 20px;
   }
 }
