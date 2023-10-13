@@ -6,6 +6,7 @@
   --branding-color: #4b3a70;
   --backround-color: #322f43;
   --darkest-color: #212532;
+  --gold-border: 3px solid #c4945c;
 }
 
 body {
@@ -15,19 +16,42 @@ body {
 h1 {
   font-family: var(--heading-font-family);
   font-size: 90px;
-  color: var(--darkest-color);
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 h2 {
   color: var(--primary-color);
   font-weight: normal;
   line-height: 2;
+  font-size: 40;
 }
 
-h3,
+h3 {
+  font-family: var(--heading-font-family);
+  color: var(--secondary-color);
+  font-size: 60px;
+}
 h4 {
-  font-family: var(--default-font-family);
-  color: var(--branding-color);
-  font-weight: bold;
+  font-size: 40px;
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 p {
   font-family: var(--default-font-family);
@@ -40,6 +64,12 @@ img {
   border-radius: 20px;
 }
 header {
+  text-align: center;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
   text-align: center;
 }
 .nav-link {
@@ -71,27 +101,10 @@ header {
   );
   border-radius: 15px;
 }
-.main-background {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/567/original/gold-purple-bg.png?1696801846);
-  text-align: center;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
+.index-section header {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/548/original/purple-background.jpg?1696792212);
 }
 
-.hero h3 {
-  color: var(--darkest-color);
-  font-size: 30px;
-  margin: 0;
-}
-.hero h2 {
-  color: var(--secondary-color);
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 1.5;
-}
 .btn-branding {
   background: var(--branding-color);
   color: var(--primary-color);
@@ -113,26 +126,6 @@ header {
   border-radius: 15px;
 }
 
-.container h2 {
-  font-family: var(--heading-font-family);
-  font-size: 40px;
-}
-
-.container h3 {
-  margin-bottom: 40px;
-  font-size: 40px;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .btn-branding-outline {
   background-color: var(--branding-color);
   color: var(--primary-color);
@@ -141,152 +134,54 @@ header {
   border-radius: 5px;
 }
 
-.about-section.row {
-  border: solid 3px #c4945c;
+.work-page header {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/854/original/purple-clouds.jpeg?1696967387);
+}
+
+.contact-section header {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/319/original/purple-trees.jpeg?1697206894);
+  background-size: contain;
 }
 .about-section header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/835/original/purple-smoke.jpeg?1696956984);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 90vh;
-}
-
-.about-section h1 {
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about-section h2 {
-  color: var(--darkest-color);
-}
-
-.work-page header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/854/original/purple-clouds.jpeg?1696967387);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 98vh;
-}
-
-.work-page h1 {
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.work-page h2 {
-  color: var(--secondary-color);
-}
-.project-container h3 {
-  font-size: 50px;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.project-container h4 {
-  font-size: 40px;
-}
-
-.contact-container {
-  margin-top: 300px;
-}
-.contact-container h2 {
-  font-size: 90px;
+  background-size: contain;
 }
 
 @media (max-width: 900px) {
+  body {
+    text-align: center;
+  }
   h1 {
     font-size: 60px;
   }
-  h3 {
+  h2 {
     font-size: 20px;
   }
-  p {
-    text-align: center;
-    font-size: 16px;
-    line-height: 25px;
+  h3 {
+    font-size: 30px;
   }
-  .main-background {
+  h4 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  header {
     height: 40vh;
     margin-top: 70px;
   }
-  .hero {
-    margin: 0;
+
+  .navbar-brand {
+    width: 20px;
   }
-  .hero h3 {
-    font-size: 18px;
-  }
-  .hero h2 {
-    font-size: 20px;
-  }
+
   .btn-branding {
     padding: 10px 40px;
   }
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
+
   .btn-branding-outline {
-    display: block;
     background-color: #4b3a70;
     color: #b7a3ca;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-  .container h2 {
-    font-size: 40px;
-  }
-  .container h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-  }
-  .about-section header {
-    margin-top: 70px;
-    height: 40vh;
-  }
-  .about-section header h2 {
-    font-size: 20px;
-  }
-
-  .work-page header {
-    margin-top: 70px;
-    height: 40vh;
-  }
-  .project-container h3 {
-    font-size: 20px;
-  }
-  .project-container h4 {
-    font-size: 20px;
   }
 }
