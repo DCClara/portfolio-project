@@ -15,7 +15,7 @@ body {
 }
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 90px;
+  font-size: 100px;
   background: #c4945c;
   background: linear-gradient(
     to right,
@@ -65,19 +65,18 @@ img {
 }
 header {
   text-align: center;
+  background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 98vh;
+  height: 100vh;
   text-align: center;
 }
-.nav-link {
-  color: var(--secondary-color);
-  font-size: 18px;
-}
 
-.nav-link:hover {
+a:hover {
+  transition: all 200ms ease-in-out;
+  color: var(--darkest-color);
   background: #c4945c;
   background: linear-gradient(
     to right,
@@ -87,6 +86,11 @@ header {
     #a37b3e 100%
   );
   border-radius: 15px;
+}
+
+.nav-link {
+  color: var(--secondary-color);
+  font-size: 18px;
 }
 
 .navbar-nav .nav-link.active {
@@ -100,9 +104,6 @@ header {
     #a37b3e 100%
   );
   border-radius: 15px;
-}
-.index-section header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/548/original/purple-background.jpg?1696792212);
 }
 
 .btn-branding {
@@ -125,7 +126,6 @@ header {
   );
   border-radius: 15px;
 }
-
 .btn-branding-outline {
   background-color: var(--branding-color);
   color: var(--primary-color);
@@ -133,18 +133,33 @@ header {
   padding: 10px 60px;
   border-radius: 5px;
 }
-
+.index-section header {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/548/original/purple-background.jpg?1696792212);
+}
 .work-page header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/854/original/purple-clouds.jpeg?1696967387);
 }
 
 .contact-section header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/319/original/purple-trees.jpeg?1697206894);
-  background-size: contain;
 }
 .about-section header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/835/original/purple-smoke.jpeg?1696956984);
-  background-size: contain;
+}
+.contact-container {
+  background-color: var(--branding-color);
+  margin: 50px 100px;
+  padding: 70px;
+  border-radius: 20px;
+}
+
+.contact-section a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.contact-section a:hover {
+  padding: 14px;
+  color: var(--darkest-color);
 }
 
 @media (max-width: 900px) {
@@ -183,5 +198,9 @@ header {
   .btn-branding-outline {
     background-color: #4b3a70;
     color: #b7a3ca;
+  }
+  .contact-container {
+    margin: 0 auto;
+    border-radius: 0;
   }
 }
