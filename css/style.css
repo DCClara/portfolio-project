@@ -74,9 +74,13 @@ header {
   text-align: center;
 }
 
-a:hover {
-  transition: all 200ms ease-in-out;
-  color: var(--darkest-color);
+.nav-link {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+.nav-link.active {
+  font-weight: bold;
   background: #c4945c;
   background: linear-gradient(
     to right,
@@ -85,15 +89,12 @@ a:hover {
     #d0a866 100%,
     #a37b3e 100%
   );
-  border-radius: 15px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.nav-link {
-  color: var(--secondary-color);
-  font-size: 18px;
-}
-
-.navbar-nav .nav-link.active {
+.nav-link:hover {
+  transform: scale(1.3);
+  font-weight: bolder;
   transition: all 100ms ease-in-out;
   background: #c4945c;
   background: linear-gradient(
@@ -103,7 +104,8 @@ a:hover {
     #d0a866 100%,
     #a37b3e 100%
   );
-  border-radius: 15px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-branding {
@@ -133,6 +135,18 @@ a:hover {
   padding: 10px 60px;
   border-radius: 5px;
 }
+.btn-branding-outline:hover {
+  transition: all 100ms ease-in-out;
+  color: var(--darkest-color);
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+}
 .index-section header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/548/original/purple-background.jpg?1696792212);
 }
@@ -159,7 +173,18 @@ a:hover {
 }
 .contact-section a:hover {
   padding: 14px;
+  transition: all 100ms ease-in-out;
   color: var(--darkest-color);
+  color: var(--darkest-color);
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  border-radius: 10px;
 }
 
 @media (max-width: 900px) {
