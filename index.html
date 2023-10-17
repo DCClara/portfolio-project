@@ -34,8 +34,8 @@
       style="--bs-bg-opacity: 0.4"
     >
       <div class="container">
-        <a class="navbar-brand" href="/"
-          ><img src="images/DCasa-logo.png" class="my-logo" width="50px"
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/DCasa-logo.png" class="nav-logo" width="50px"
         /></a>
         <button
           class="navbar-toggler"
@@ -46,6 +46,16 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="
+            background: #c4945c;
+            background: linear-gradient(
+              to right,
+              #c4945c 24%,
+              #9f6827 60%,
+              #d0a866 100%,
+              #a37b3e 100%
+            );
+          "
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +65,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="/"
+                href="index.html"
                 title="Homepage"
                 >Home</a
               >
@@ -89,9 +99,9 @@
       </header>
     </div>
 
-    <div class="container">
+    <div class="index-container mb-5">
       <h3 class="text-center mt-5">Some of my favorite projects</h3>
-      <div class="row bg-white bg-opacity-10 rounded p-5 mt-5">
+      <div class="row bg-white bg-opacity-10 rounded p-5 mt-5 mb-5">
         <div class="col d-none d-lg-block">
           <img
             src="images/weatherapp.png"
@@ -156,9 +166,44 @@
           </div>
         </div>
       </div>
-      <p class="mt-5 mb-5 text-center">
-        Coded by Danielle Casa 👩🏽‍💻, open-sourced on
-        <a href="https://github.com/DCClara/portfolio-project">GitHub.</a>
+    </div>
+    <footer>
+      <div class="container-flex larger footer bottom p-5">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/DCasa-logo.png"
+              alt=""
+              class="img-fluid mx-auto d-block rounded"
+              width="125px"
+            />
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="social-links">
+              <a href="mailto:casa.danielle@icloud.com" target="_blank"
+                ><i class="fa-solid fa-square-envelope fa-lg"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/daniellec-casa/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-lg"></i
+              ></a>
+              <a href="https://github.com/DCClara" target="_blank"
+                ><i class="fa-brands fa-square-github fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="page-end">
+      <p class="mt-3 text-center">
+        Coded by Danielle Casa 👩🏽‍💻 open-sourced on
+        <a href="https://github.com/DCClara/portfolio-project" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://www.netlify.com" target="_blank">Netlify</a>.
       </p>
     </div>
   </body>

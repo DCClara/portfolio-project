@@ -60,9 +60,7 @@ p {
   font-weight: normal;
   color: var(--secondary-color);
 }
-img {
-  border-radius: 20px;
-}
+
 header {
   text-align: center;
   background-size: cover;
@@ -70,8 +68,45 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
+}
+footer {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/943/original/purple-abstract.png?1697486931);
+  background-size: cover;
   text-align: center;
+}
+
+footer img .footer-logo {
+  padding: 20px;
+}
+footer .social-links a {
+  font-size: 50px;
+  padding: 20px;
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .social-links i:hover {
+  font-size: 80px;
+  transition: all 100ms ease-in-out;
+  background: #c4945c;
+  background: linear-gradient(
+    to right,
+    #c4945c 24%,
+    #9f6827 60%,
+    #d0a866 100%,
+    #a37b3e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-link {
@@ -160,21 +195,49 @@ header {
 .about-section header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/835/original/purple-smoke.jpeg?1696956984);
 }
+.index-container {
+  margin: 0 30px;
+}
+
+.index-container .col img:hover {
+  transform: scale(1.2);
+  transition: all 100ms ease-in-out;
+}
+
+.index-container img {
+  border-radius: 20px;
+}
+.project-container {
+  margin: 0 20px;
+}
+.project-container img {
+  border-radius: 20px;
+}
+.project-container img:hover {
+  transform: scale(1.2);
+  transition: all 100ms ease-in-out;
+}
+
+.about-section .skill-icon {
+  display: flex;
+  margin: 0 8px;
+  justify-content: center;
+  height: 75px;
+}
+
 .contact-container {
   background-color: var(--branding-color);
-  margin: 100px 100px;
   padding: 70px;
-  border-radius: 20px;
 }
 
 .contact-section a {
   color: var(--primary-color);
   text-decoration: none;
+  font-size: 20px;
 }
 .contact-section a:hover {
   padding: 14px;
-  transition: all 100ms ease-in-out;
-  color: var(--darkest-color);
+  transition: all 80ms ease-in-out;
   color: var(--darkest-color);
   background: #c4945c;
   background: linear-gradient(
@@ -185,6 +248,18 @@ header {
     #a37b3e 100%
   );
   border-radius: 10px;
+}
+
+.page-end a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.page-end a:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 @media (max-width: 900px) {
@@ -212,6 +287,18 @@ header {
     margin-top: 70px;
   }
 
+  footer img {
+    width: 50px;
+  }
+
+  footer .social-links a {
+    font-size: 25px;
+  }
+
+  footer .social-links i:hover {
+    font-size: 40px;
+  }
+
   .navbar-brand {
     width: 20px;
   }
@@ -227,5 +314,22 @@ header {
   .contact-container {
     margin: 0 auto;
     border-radius: 0;
+  }
+  .contact-section a {
+    font-size: 18px;
+  }
+  .contact-section a:hover {
+    color: var(--secondary-color);
+    background: var(--darkest-color);
+    padding: 5px;
+  }
+  .about-section .skill-icon {
+    display: none;
+  }
+  .credential-section p {
+    margin: 0;
+  }
+  .project-container img:hover {
+    transform: none;
   }
 }
