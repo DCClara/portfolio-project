@@ -332,4 +332,11 @@ footer .social-links i:hover {
   .project-container img:hover {
     transform: none;
   }
+
+  .project-container h4 {
+    margin-bottom: 1px;
+  }
+  .project-container p {
+    margin-bottom: 40px;
+  }
 }
