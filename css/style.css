@@ -263,28 +263,25 @@ footer .social-links i:hover {
 }
 
 @media (max-width: 900px) {
-  body {
-    text-align: center;
-  }
   h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h4 {
     font-size: 25px;
   }
   p {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 20px;
   }
   header {
     height: 40vh;
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
   footer img {
@@ -304,12 +301,15 @@ footer .social-links i:hover {
   }
 
   .btn-branding {
-    padding: 10px 40px;
+    padding: 7px 30px;
+    font-size: 15px;
   }
 
   .btn-branding-outline {
     background-color: #4b3a70;
     color: #b7a3ca;
+    padding: 7px 30px;
+    font-size: 15px;
   }
   .contact-container {
     margin: 0 auto;
@@ -332,7 +332,6 @@ footer .social-links i:hover {
   .project-container img:hover {
     transform: none;
   }
-
   .project-container h4 {
     margin-bottom: 1px;
   }
