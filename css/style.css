@@ -1,31 +1,31 @@
 :root {
-  --heading-font-family: "Lily Script One", cursive;
   --default-font-family: "Poppins", sans-serif;
   --primary-color: #b7a3ca;
   --secondary-color: #c5c4c4;
   --branding-color: #4b3a70;
   --backround-color: #322f43;
   --darkest-color: #212532;
-  --gold-border: 3px solid #c4945c;
+  --golden-color: #c4945c;
 }
 
 body {
-  background-color: var(--darkest-color);
+  margin: 0 auto;
+  background-color: var(--secondary-color);
   font-family: var(--default-font-family);
 }
+
+header {
+  background-color: var(--branding-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
 h1 {
   font-family: var(--heading-font-family);
   font-size: 120px;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--darkest-color);
 }
 
 h2 {
@@ -42,16 +42,7 @@ h3 {
 }
 h4 {
   font-size: 40px;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--golden-color);
 }
 p {
   font-family: var(--default-font-family);
@@ -61,54 +52,6 @@ p {
   color: var(--secondary-color);
 }
 
-header {
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-}
-footer {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/943/original/purple-abstract.png?1697486931);
-  background-size: cover;
-  text-align: center;
-}
-
-footer img .footer-logo {
-  padding: 20px;
-}
-footer .social-links a {
-  font-size: 50px;
-  padding: 20px;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-footer .social-links i:hover {
-  font-size: 80px;
-  transition: all 100ms ease-in-out;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .nav-link {
   color: var(--secondary-color);
   font-size: 18px;
@@ -116,31 +59,12 @@ footer .social-links i:hover {
 
 .nav-link.active {
   font-weight: bold;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
+
 .nav-link:hover {
   transform: scale(1.3);
   font-weight: bolder;
   transition: all 100ms ease-in-out;
-  background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .btn-branding {
@@ -154,13 +78,6 @@ footer .social-links i:hover {
   transition: all 100ms ease-in-out;
   color: var(--darkest-color);
   background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
   border-radius: 15px;
 }
 .btn-branding-outline {
@@ -174,27 +91,8 @@ footer .social-links i:hover {
   transition: all 100ms ease-in-out;
   color: var(--darkest-color);
   background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-}
-.index-section header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/548/original/purple-background.jpg?1696792212);
-}
-.work-page header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/854/original/purple-clouds.jpeg?1696967387);
 }
 
-.contact-section header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/319/original/purple-trees.jpeg?1697206894);
-}
-.about-section header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/099/835/original/purple-smoke.jpeg?1696956984);
-}
 .index-container {
   margin: 0 30px;
 }
@@ -207,12 +105,15 @@ footer .social-links i:hover {
 .index-container img {
   border-radius: 20px;
 }
+
 .project-container {
   margin: 0 20px;
 }
+
 .project-container img {
   border-radius: 20px;
 }
+
 .project-container img:hover {
   transform: scale(1.2);
   transition: all 100ms ease-in-out;
@@ -240,24 +141,42 @@ footer .social-links i:hover {
   transition: all 80ms ease-in-out;
   color: var(--darkest-color);
   background: #c4945c;
-  background: linear-gradient(
-    to right,
-    #c4945c 24%,
-    #9f6827 60%,
-    #d0a866 100%,
-    #a37b3e 100%
-  );
-  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--backround-color);
+  color: var(--primary-color);
+}
+
+footer img .footer-logo {
+  padding: 20px;
+}
+
+footer .social-links a {
+  font-size: 50px;
+  padding: 20px;
+  color: var(--branding-color);
+}
+
+footer .social-links i:hover {
+  font-size: 80px;
+  transition: all 100ms ease-in-out;
+  color: #c4945c;
+}
+
+.page-end p {
+  color: var(--branding-color);
 }
 
 .page-end a {
   text-decoration: none;
-  color: var(--primary-color);
+  font-weight: bold;
+  color: var(--darkest-color);
 }
 
 .page-end a:hover {
-  color: var(--secondary-color);
-  background-color: var(--branding-color);
+  color: var(--golden-color);
   border-radius: 10px;
   padding: 5px;
 }
