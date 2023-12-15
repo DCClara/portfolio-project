@@ -17,14 +17,17 @@ body {
 header {
   background-color: var(--branding-color);
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 90vh;
+  padding: 80px 20px;
+}
+
+header .bio-section {
+  margin-left: 100px;
+  margin-top: 100px;
 }
 
 h1 {
-  font-family: var(--heading-font-family);
-  font-size: 120px;
+  font-size: 100px;
   color: var(--darkest-color);
 }
 
@@ -36,7 +39,6 @@ h2 {
 }
 
 h3 {
-  font-family: var(--heading-font-family);
   color: var(--secondary-color);
   font-size: 60px;
 }
@@ -45,7 +47,6 @@ h4 {
   color: var(--golden-color);
 }
 p {
-  font-family: var(--default-font-family);
   font-size: 18px;
   line-height: 35px;
   font-weight: normal;
@@ -81,7 +82,7 @@ nav li.active a {
   font-weight: bold;
 }
 
-.container .logo {
+nav .logo {
   max-height: 40px;
   border-radius: 3px;
 }
@@ -164,6 +165,7 @@ nav li.active a {
 
 footer {
   text-align: center;
+  margin: 60px 0;
   background-color: var(--backround-color);
   color: var(--primary-color);
 }
@@ -177,7 +179,7 @@ footer .social-links a {
 footer .social-links i:hover {
   font-size: 80px;
   transition: all 100ms ease-in-out;
-  color: #c4945c;
+  color: var(--golden-color);
 }
 
 .page-end p {
@@ -196,12 +198,20 @@ footer .social-links i:hover {
   padding: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1040px) {
+  header .bio-section {
+    margin: 0;
+  }
+  header h2 {
+    line-height: 1.5;
+  }
   h1 {
     font-size: 40px;
+    text-align: center;
   }
   h2 {
     font-size: 18px;
+    text-align: center;
   }
   h3 {
     font-size: 25px;
@@ -211,15 +221,7 @@ footer .social-links i:hover {
   }
   p {
     font-size: 15px;
-    line-height: 20px;
-  }
-  header {
-    height: 40vh;
-    margin-top: 60px;
-  }
-
-  footer img {
-    width: 50px;
+    line-height: 1.7;
   }
 
   footer .social-links a {
@@ -229,12 +231,7 @@ footer .social-links i:hover {
   footer .social-links i:hover {
     font-size: 40px;
   }
-
-  .navbar-brand {
-    width: 20px;
-  }
-
-  .btn-branding {
+  /* .btn-branding {
     padding: 7px 30px;
     font-size: 15px;
   }
@@ -244,7 +241,7 @@ footer .social-links i:hover {
     color: #b7a3ca;
     padding: 7px 30px;
     font-size: 15px;
-  }
+  } */
   .contact-container {
     margin: 0 auto;
     border-radius: 0;
