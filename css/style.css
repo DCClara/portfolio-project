@@ -14,29 +14,9 @@ body {
   background-color: var(--secondary-color);
   font-family: var(--default-font-family);
 }
-.hero {
-  background-color: var(--branding-color);
-  padding: 50px;
-}
-.hero-img {
-  width: 350px;
-  aspect-ratio: initial;
-  border-radius: 8px;
-}
-h1 {
-  font-size: 60px;
-  color: var(--darkest-color);
-}
-
-h2 {
-  color: var(--golden-color);
-  font-weight: normal;
-  line-height: 2;
-  font-size: 40;
-}
 
 h3 {
-  color: var(--darkest-colorr);
+  color: var(--darkest-color);
   font-size: 60px;
 }
 h4 {
@@ -44,7 +24,7 @@ h4 {
   color: var(--backround-color);
 }
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 35px;
   font-weight: normal;
   color: var(--secondary-color);
@@ -72,6 +52,83 @@ nav .logo {
   border-radius: 3px;
 }
 
+footer {
+  text-align: center;
+  margin: 60px 0;
+  background-color: var(--backround-color);
+  color: var(--primary-color);
+}
+
+footer .social-links a {
+  font-size: 50px;
+  padding: 20px;
+  color: var(--branding-color);
+}
+
+footer .social-links i:hover {
+  font-size: 80px;
+  transition: all 100ms ease-in-out;
+  color: var(--golden-color);
+}
+
+.hero {
+  color: var(--primary-color);
+  background: var(--branding-color);
+  padding: 50px;
+}
+.hero h2 {
+  color: var(--darkest-color);
+  width: 16em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.hero-img {
+  width: 350px;
+  aspect-ratio: initial;
+}
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #1b0040;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.arrow {
+  margin-top: 120px;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .btn-branding {
   text-decoration: none;
   background: var(--golden-color);
@@ -86,20 +143,6 @@ nav .logo {
   background: var(--darkest-color);
   color: var(--golden-color);
 }
-.btn-branding-outline {
-  text-decoration: none;
-  background-color: var(--primary-color);
-  color: var(--darkest-color);
-  font-size: 20px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  width: fit-content;
-}
-.btn-branding-outline:hover {
-  transition: all 100ms ease-in-out;
-  background: var(--darkest-color);
-  color: var(--primary-color);
-}
 
 .index-container .col img:hover {
   transform: scale(1.2);
@@ -110,8 +153,23 @@ nav .logo {
   border-radius: 20px;
 }
 
+.about-section h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.about-section {
+  color: var(--paragraph-color);
+  background: var(--backround-color);
+  padding: 60px 200px;
+}
+.about-section a {
+  text-decoration: none;
+  color: var(--golden-color);
+}
+
 .project-container {
-  margin: 0 20px;
+  margin: 0px 200px;
 }
 .project-container p {
   color: var(--darkest-color);
@@ -148,25 +206,6 @@ nav .logo {
   transition: all 80ms ease-in-out;
   color: var(--darkest-color);
   background: #c4945c;
-}
-
-footer {
-  text-align: center;
-  margin: 60px 0;
-  background-color: var(--backround-color);
-  color: var(--primary-color);
-}
-
-footer .social-links a {
-  font-size: 50px;
-  padding: 20px;
-  color: var(--branding-color);
-}
-
-footer .social-links i:hover {
-  font-size: 80px;
-  transition: all 100ms ease-in-out;
-  color: var(--golden-color);
 }
 
 .page-end p {
