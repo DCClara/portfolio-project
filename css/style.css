@@ -10,7 +10,7 @@
 }
 body {
   margin: 0 auto;
-  background-color: var(--secondary-color);
+  background-color: var(--branding-color);
   font-family: var(--default-font-family);
 }
 h3 {
@@ -145,13 +145,20 @@ footer .social-links i:hover {
   color: var(--golden-color);
 }
 .project-container {
-  margin: 0px 200px;
+  padding: 0px 100px;
+  background-color: var(--branding-color);
 }
 .project-container h2 {
+  margin: 0;
   font-weight: 600;
+  color: var(--darkest-color);
+}
+.project-container h4 {
+  font-weight: 600;
+  color: var(--darkest-color);
 }
 .project-container p {
-  color: var(--darkest-color);
+  color: var(--secondary-color);
 }
 .project-container img {
   border-radius: 20px;
@@ -159,6 +166,9 @@ footer .social-links i:hover {
 .project-container img:hover {
   transform: scale(1.2);
   transition: all 100ms ease-in-out;
+}
+.project-container .btn-branding {
+  background-color: var(--primary-color);
 }
 .certifications-section {
   background-color: var(--backround-color);
@@ -179,23 +189,17 @@ footer .social-links i:hover {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 .image-container {
   display: flex;
 }
 .image-container img {
   width: 100%;
   height: auto;
-}
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-.btns-carousel {
-  color: var(--branding-color);
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  padding: 5px 30px;
 }
 .contact-container {
   background-color: var(--branding-color);
@@ -251,7 +255,7 @@ footer .social-links i:hover {
     padding: 40px;
   }
   .project-container {
-    margin: 30px;
+    /* margin: 30px; */
   }
   .contact-container {
     padding: 20px;
