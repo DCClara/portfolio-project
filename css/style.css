@@ -10,7 +10,6 @@
 }
 body {
   margin: 0 auto;
-  background-color: var(--branding-color);
   font-family: var(--default-font-family);
 }
 h3 {
@@ -61,7 +60,10 @@ footer .social-links i:hover {
 }
 .hero {
   color: var(--primary-color);
-  background: var(--branding-color);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/504/original/hero-backround.jpg?1702753229);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px;
 }
 .hero h2 {
@@ -131,21 +133,28 @@ footer .social-links i:hover {
   background: var(--darkest-color);
   color: var(--golden-color);
 }
+.about-section {
+  color: var(--paragraph-color);
+  background: var(--backround-color);
+  padding: 80px 50px;
+}
 .about-section h2 {
   color: var(--primary-color);
   font-weight: 600;
 }
-.about-section {
-  color: var(--paragraph-color);
-  background: var(--backround-color);
-  padding: 20px 200px;
+.about-section p {
+  font-size: 25px;
 }
 .about-section a {
   text-decoration: none;
   color: var(--golden-color);
 }
+.about-section img {
+  width: 350px;
+  aspect-ratio: initial;
+}
 .project-container {
-  padding: 0px 100px;
+  padding: 50px 100px;
   background-color: var(--branding-color);
 }
 .project-container h2 {
@@ -169,6 +178,9 @@ footer .social-links i:hover {
 }
 .project-container .btn-branding {
   background-color: var(--primary-color);
+}
+.project-container .btn-branding:hover {
+  background-color: var(--secondary-color);
 }
 .certifications-section {
   background-color: var(--backround-color);
@@ -194,16 +206,16 @@ footer .social-links i:hover {
   justify-content: space-between;
   margin-top: 10px;
 }
-.image-container {
-  display: flex;
-}
 .image-container img {
   width: 100%;
   height: auto;
 }
 .contact-container {
   background-color: var(--branding-color);
-  padding: 70px 300px;
+  padding: 100px;
+}
+.contact-container p {
+  font-size: 25px;
 }
 .skill-icon {
   display: flex;
@@ -212,6 +224,8 @@ footer .social-links i:hover {
 }
 .page-end p {
   color: var(--branding-color);
+  font-size: 20px;
+  padding: 5px;
 }
 .page-end a {
   text-decoration: none;
@@ -249,25 +263,35 @@ footer .social-links i:hover {
     font-size: 40px;
   }
   .hero {
-    padding: 20px;
+    padding: 0px;
   }
   .about-section {
     padding: 40px;
   }
-  .project-container {
-    /* margin: 30px; */
-  }
   .contact-container {
+    padding: 20px;
+  }
+  .contact-container p {
+    font-size: 15px;
+  }
+  .project-container {
     padding: 20px;
   }
 }
 @media (max-width: 700px) {
   .hero {
     height: fit-content;
+    padding-top: 10px;
   }
-
   .about-section {
     text-align: center;
+  }
+  .about-section p {
+    font-size: 15px;
+  }
+  .btns-carousel {
+    font-size: 10px;
+    padding: 3px 15px;
   }
 }
 
@@ -280,5 +304,9 @@ footer .social-links i:hover {
   }
   .about-section {
     padding: 10px;
+  }
+  .page-end p {
+    font-size: 10px;
+    padding: ;
   }
 }
