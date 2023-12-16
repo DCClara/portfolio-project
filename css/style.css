@@ -138,6 +138,10 @@ footer .social-links i:hover {
   background: var(--backround-color);
   padding: 80px 50px;
 }
+.about-text {
+  padding: 0 50px;
+  margin-left: 20px;
+}
 .about-section h2 {
   color: var(--primary-color);
   font-weight: 600;
@@ -148,10 +152,6 @@ footer .social-links i:hover {
 .about-section a {
   text-decoration: none;
   color: var(--golden-color);
-}
-.about-section img {
-  width: 350px;
-  aspect-ratio: initial;
 }
 .project-container {
   padding: 50px 100px;
@@ -216,11 +216,11 @@ footer .social-links i:hover {
 }
 .contact-container p {
   font-size: 25px;
+  padding: 0 20px;
 }
-.skill-icon {
-  display: flex;
-  margin: 0 8px;
-  justify-content: center;
+.contact-container a {
+  text-decoration: none;
+  color: var(--golden-color);
 }
 .page-end p {
   color: var(--branding-color);
@@ -285,6 +285,7 @@ footer .social-links i:hover {
   }
   .about-section {
     text-align: center;
+    padding: 0;
   }
   .about-section p {
     font-size: 15px;
@@ -295,18 +296,21 @@ footer .social-links i:hover {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 590px) {
   footer .social-links a {
     font-size: 15px;
   }
   .hero h2 {
     font-size: 20px;
-  }
-  .about-section {
-    padding: 10px;
+    
   }
   .page-end p {
     font-size: 10px;
-    padding: ;
+    }
+  .contact-container h3{
+    text-align: center;
+  }
+  .contact-container h4 {
+    text-align: center;
   }
 }
