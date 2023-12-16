@@ -46,7 +46,6 @@ nav .logo {
 }
 footer {
   text-align: center;
-  margin: 60px 0;
   background-color: var(--backround-color);
   color: var(--primary-color);
 }
@@ -132,13 +131,6 @@ footer .social-links i:hover {
   background: var(--darkest-color);
   color: var(--golden-color);
 }
-.index-container .col img:hover {
-  transform: scale(1.2);
-  transition: all 100ms ease-in-out;
-}
-.index-container img {
-  border-radius: 20px;
-}
 .about-section h2 {
   color: var(--primary-color);
   font-weight: 600;
@@ -155,6 +147,9 @@ footer .social-links i:hover {
 .project-container {
   margin: 0px 200px;
 }
+.project-container h2 {
+  font-weight: 600;
+}
 .project-container p {
   color: var(--darkest-color);
 }
@@ -165,26 +160,26 @@ footer .social-links i:hover {
   transform: scale(1.2);
   transition: all 100ms ease-in-out;
 }
-.about-section .skill-icon {
+.certifications-section {
+  padding: 50px 500px;
+  background-color: var(--backround-color);
+}
+.certifications-section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+ .carousel-inner {
+  $carousel-transition-duration: .6s;
+}
+.contact-container {
+  background-color: var(--branding-color);
+  padding: 70px 300px;
+}
+.skill-icon {
   display: flex;
   margin: 0 8px;
   justify-content: center;
   height: 75px;
-}
-.contact-container {
-  background-color: var(--branding-color);
-  padding: 70px;
-}
-.contact-section a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 20px;
-}
-.contact-section a:hover {
-  padding: 14px;
-  transition: all 80ms ease-in-out;
-  color: var(--darkest-color);
-  background: #c4945c;
 }
 .page-end p {
   color: var(--branding-color);
