@@ -71,22 +71,29 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-center">
           <li class="nav-item active">
-            <a class="nav-link" href="#" title="Homepage">
+            <a class="nav-link" href="#hero-section" title="Homepage">
               Home
               <span class="sr-only" title="Current Homepage">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" title="Danielle's Projects">My Work</a>
+            <a
+              class="nav-link"
+              href="#project-section"
+              title="Danielle's Projects"
+              >My Work</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" title="Contact Danielle">Contact</a>
+            <a class="nav-link" href="#contact-section" title="Contact Danielle"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="hero-section">
       <div class="container d-flex flex-row justify-content-center">
         <div class="d-flex flex-column col-lg-6 justify-content-center">
           <h4>Hi, I'm</h4>
@@ -100,14 +107,14 @@
           <div class="d-none mt-4 d-md-flex">
             <a
               class="btn-branding text-center"
-              href="/portfolio"
-              title="Portfolio Page"
+              href="#project-section"
+              title="My work"
               >View Work</a
             >
             <a
               class="btn-branding ms-5 text-center"
-              href="/contact"
-              title="Contact Page"
+              href="#contact-section"
+              title="Contact"
               >Contact Me</a
             >
           </div>
@@ -121,7 +128,10 @@
       </div>
     </div>
 
-    <div class="about-section d-flex flex-row justify-content-center">
+    <div
+      class="about-section d-flex flex-row justify-content-center"
+      id="about-section"
+    >
       <div class="d-none d-lg-flex flex-column col-lg-3 justify-content-center">
         <img
           class="img-fluid"
@@ -154,7 +164,7 @@
       </div>
     </div>
 
-    <div class="project-container">
+    <div class="project-container" id="project-section">
       <h2 class="text-center mb-3">Check out my work</h2>
       <div class="row" id="row1">
         <div class="col-md-3">
@@ -322,7 +332,7 @@
       </div>
     </div>
 
-    <div class="contact-container d-flex flex-row">
+    <div class="contact-container d-flex flex-row" id="contact-section">
       <div class="contact-section col-lg-9 justify-content-center">
         <h3>Let's get in touch!</h3>
         <p>
@@ -341,7 +351,9 @@
           >
         </h4>
       </div>
-      <div class="row d-none d-lg-flex flex-column col-lg-3 justify-content-center">
+      <div
+        class="row d-none d-lg-flex flex-column col-lg-3 justify-content-center"
+      >
         <img
           class="img-fluid"
           src="images/network-monochromatic.png"
@@ -349,7 +361,7 @@
         />
       </div>
     </div>
-
+    <button id="backToTopBtn" title="Back to Top">^</button>
     <footer>
       <div class="container-flex larger footer bottom p-5">
         <div class="social-links">
@@ -480,6 +492,27 @@
             this.innerText = "Show More";
           }
         });
+
+      //back to top function
+      document.addEventListener("DOMContentLoaded", function () {
+        var backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.addEventListener("scroll", function () {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            backToTopBtn.style.display = "block";
+          } else {
+            backToTopBtn.style.display = "none";
+          }
+        });
+
+        backToTopBtn.addEventListener("click", function () {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
+      });
     </script>
   </body>
 </html>
