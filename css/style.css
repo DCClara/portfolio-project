@@ -12,12 +12,16 @@ body {
   margin: 0 auto;
   font-family: var(--default-font-family);
 }
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
 h3 {
   color: var(--darkest-color);
   font-size: 60px;
 }
 h4 {
-  font-size: 40px;
+  font-size: 35px;
   color: var(--backround-color);
 }
 p {
@@ -64,19 +68,16 @@ footer .social-links i:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px;
+  padding: 150px 0px;
 }
-.hero h2 {
+.hero h6 {
+  font-size: 25px;
   color: var(--darkest-color);
   width: 16em;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-}
-.hero-img {
-  width: 350px;
-  aspect-ratio: initial;
 }
 .anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -87,7 +88,7 @@ footer .social-links i:hover {
     width: 0;
   }
   to {
-    width: 12.5em;
+    width: 12.3em;
   }
 }
 @keyframes blinkTextCursor {
@@ -119,6 +120,10 @@ footer .social-links i:hover {
     transform: translateY(-15px);
   }
 }
+.hero-img {
+  width: 350px;
+  aspect-ratio: initial;
+}
 .btn-branding {
   text-decoration: none;
   background: var(--golden-color);
@@ -137,7 +142,7 @@ footer .social-links i:hover {
 .about-section {
   color: var(--paragraph-color);
   background: var(--backround-color);
-  padding: 80px 50px;
+  padding: 150px 50px;
 }
 .about-text {
   padding: 0 50px;
@@ -145,7 +150,6 @@ footer .social-links i:hover {
 }
 .about-section h2 {
   color: var(--primary-color);
-  font-weight: 600;
 }
 .about-section p {
   font-size: 25px;
@@ -155,12 +159,11 @@ footer .social-links i:hover {
   color: var(--golden-color);
 }
 .project-container {
-  padding: 50px 100px;
+  padding: 150px 50px;
   background-color: var(--branding-color);
 }
 .project-container h2 {
   margin: 0;
-  font-weight: 600;
   color: var(--darkest-color);
 }
 .project-container h4 {
@@ -184,14 +187,11 @@ footer .social-links i:hover {
   background-color: var(--secondary-color);
 }
 .certifications-section {
+  padding: 150px 50px;
   background-color: var(--backround-color);
-}
-.certifications-section {
-  padding: 30px;
 }
 .certifications-section h2 {
   color: var(--primary-color);
-  font-weight: 700;
 }
 .carousel-container {
   width: 100%;
@@ -213,7 +213,7 @@ footer .social-links i:hover {
 }
 .contact-container {
   background-color: var(--branding-color);
-  padding: 100px;
+  padding: 150px 200px;
 }
 .contact-container p {
   font-size: 25px;
@@ -325,8 +325,15 @@ footer .social-links i:hover {
   .hero h2 {
     font-size: 20px;
   }
+  .about-text {
+    padding: 10px;
+    margin: 0;
+  }
   .about-section p {
     font-size: 10px;
+  }
+  .certifications-section {
+    padding: 10px;
   }
   .certifications-section h2 {
     font-weight: 400;
