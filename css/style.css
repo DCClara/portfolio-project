@@ -133,6 +133,7 @@ footer .social-links i:hover {
   background: var(--darkest-color);
   color: var(--golden-color);
 }
+
 .about-section {
   color: var(--paragraph-color);
   background: var(--backround-color);
@@ -216,7 +217,6 @@ footer .social-links i:hover {
 }
 .contact-container p {
   font-size: 25px;
-  padding: 0 20px;
 }
 .contact-container a {
   text-decoration: none;
@@ -241,9 +241,9 @@ footer .social-links i:hover {
 #backToTopBtn {
   display: none;
   position: fixed;
-  bottom: 400px;
-  right: 40px;
-  font-size: 24px;
+  bottom: 40px;
+  right: 20px;
+  font-size: 40px;
   background-color: var(--primary-color);
   color: var(--darkest-color);
   border: none;
@@ -346,5 +346,6 @@ footer .social-links i:hover {
   }
   #backToTopBtn {
     right: 5px;
+    font-size: 25px;
   }
 }
