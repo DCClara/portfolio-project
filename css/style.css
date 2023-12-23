@@ -159,6 +159,7 @@ footer .social-links i:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  border: none;
 }
 .image-container img {
   width: 100%;
@@ -199,7 +200,7 @@ footer .social-links i:hover {
   position: fixed;
   bottom: 40px;
   right: 20px;
-  font-size: 40px;
+  font-size: 20px;
   background-color: var(--primary-color);
   color: var(--darkest-color);
   border: none;
@@ -310,6 +311,6 @@ footer .social-links i:hover {
   }
   #backToTopBtn {
     right: 5px;
-    font-size: 25px;
+    font-size: 10px;
   }
 }
