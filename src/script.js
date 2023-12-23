@@ -1,25 +1,44 @@
 //carousel functions
-const carousel = document.getElementById("carousel");
-const prevButton = document.getElementById("left");
-const nextButton = document.getElementById("right");
+const images = [
+  "shecodes-certificate-graduate.png",
+  "shecodes-certificate-1.png",
+  "shecodes-certificate-2.png",
+  "shecodes-certificate-3.png",
+  "shecodes-certificate-4.png",
+  "shecodes-certificate-5.png",
+  "shecodes-certificate-6.png",
+  "shecodes-certificate-7.png",
+  "shecodes-certificate-8.png",
+  "shecodes-certificate-9.png",
+  "shecodes-certificate-10.png",
+];
+
+const imgsContainer = document.getElementById("imgs");
+const leftBtn = document.getElementById("left");
+const rightBtn = document.getElementById("right");
 
 let currentIndex = 0;
 
-function showSlide(index) {
-  const totalSlides = document.querySelectorAll(".image-container img").length;
-  index = (index + totalSlides) % totalSlides;
-  const translateValue = -index * 100 + "%";
-  carousel.style.transform = "translateX(" + translateValue + ")";
-  currentIndex = index;
+function showImage(index) {
+  imgsContainer.innerHTML = `<img src="src/images/${
+    images[index]
+  }" alt="shecodes-certificate-${index + 1}-image" />`;
 }
 
 function prevSlide() {
-  showSlide(currentIndex - 1);
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
 }
 
 function nextSlide() {
-  showSlide(currentIndex + 1);
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
 }
+
+showImage(currentIndex);
+
+leftBtn.addEventListener("click", prevSlide);
+rightBtn.addEventListener("click", nextSlide);
 
 //icon grid functions
 const skills = [
