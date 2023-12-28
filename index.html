@@ -36,6 +36,7 @@
     ></script>
     <!-- import aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- import google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,7 +54,10 @@
     <title>Danielle Casa - Junior Front-end developer</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      data-aos="fade-right"
+    >
       <a href="index.html" title="Homepage">
         <img
           src="src/images/DCasa-logo.png"
@@ -100,7 +104,10 @@
 
     <div class="hero" id="hero-section">
       <div class="container d-flex flex-row justify-content-center">
-        <div class="d-flex flex-column col-lg-6 justify-content-center">
+        <div
+          class="d-flex flex-column col-lg-6 justify-content-center"
+          data-aos="fade-right"
+        >
           <h4>Hi, I'm</h4>
           <h1>Danielle Casa</h1>
           <h2>Junior Front-end Developer</h2>
@@ -109,7 +116,7 @@
             An adventure begins with a line of code, and every bug conquered is
             a victory.
           </p>
-          <div class="d-none mt-4 d-md-flex">
+          <div class="d-none mt-4 d-md-flex" data-aos="fade-up">
             <a
               class="btn-branding text-center"
               href="#project-section"
@@ -122,17 +129,11 @@
               title="Contact"
               >Contact Me</a
             >
-            <!-- <a
-              class="btn-branding ms-5 text-center"
-              href="documents/front-end_developer_resume copy.pdf"
-              target="_blank"
-              title="Danielle Resume"
-              >Resume</a
-            > -->
           </div>
         </div>
 
         <img
+          data-aos="fade-left"
           src="src/images/headshot.jpeg"
           alt="Danielle's portfolio headshot"
           class="hero-img ms-5 d-none d-md-flex rounded"
@@ -144,7 +145,10 @@
       class="about-section d-flex flex-row justify-content-center"
       id="about-section"
     >
-      <div class="d-none d-lg-flex flex-column col-lg-3 justify-content-center">
+      <div
+        class="d-none d-lg-flex flex-column col-lg-3 justify-content-center"
+        data-aos="fade-right"
+      >
         <img
           class="img-fluid"
           src="src/images/code-development-isometric.png"
@@ -153,8 +157,9 @@
       </div>
       <div
         class="about-text d-flex flex-column col-lg-8 justify-content-center"
+        data-aos="fade-up"
       >
-        <h2 class="mb-2 mt-2">About Me</h2>
+        <h2 class="mb-2 mt-2" data-aos="fade-right">About Me</h2>
         <p>
           I am always eager to learn and improve my skills throughout my career.
           I have a strong interest in coding and development, and I would love
@@ -177,8 +182,8 @@
     </div>
 
     <div class="project-container" id="project-section">
-      <h2 class="text-center mb-5">Check out my work</h2>
-      <div class="row" id="row1">
+      <h2 class="text-center mb-5" data-aos="fade-down">Check out my work</h2>
+      <div class="row" id="row1" data-aos="fade-right">
         <div class="col-md-4">
           <a
             href="https://shecodes-project-world-clock.netlify.app"
@@ -202,7 +207,7 @@
               src="src/images/weatherapp.png"
               alt="weather app page"
               class="img-fluid mx-auto d-block"
-                          />
+            />
           </a>
           <h4 class="text-center mt-3">Weather App</h4>
           <p class="text-center">
@@ -219,7 +224,6 @@
               src="src/images/dictionary-app.png"
               alt="Dictionary page"
               class="img-fluid mx-auto d-block"
-             
           /></a>
           <h4 class="text-center mt-3">Dictionary App</h4>
           <p class="text-center">
@@ -272,7 +276,11 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <button class="btn btn-branding mt-3" id="toggleButton">
+          <button
+            class="btn btn-branding mt-3"
+            id="toggleButton"
+            data-aos="fade-up"
+          >
             Show More
           </button>
         </div>
@@ -282,11 +290,13 @@
     <div class="certifications-section">
       <div class="container d-flex flex-row justify-content-center">
         <div class="d-flex flex-column col-lg-6 justify-content-center">
-          <h2 class="text-center mb-5 mb-sm-0">Certificates</h2>
-          <div class="carousel-container">
+          <h2 class="text-center mb-sm-0" data-aos="fade-right">
+            Certificates
+          </h2>
+          <div class="carousel-container" data-aos="fade-up">
             <div class="carousel" id="carousel">
               <div class="image-container d-flex" id="imgs">
-                 <img
+                <img
                   src="src/images/shecodes-certificate-graduate.png"
                   alt="shecodes-certificate-graduate-image"
                 />
@@ -330,7 +340,6 @@
                   src="src/images/shecodes-certificate-10.png"
                   alt="shecodes-certificate-10-image"
                 />
-               
               </div>
             </div>
             <div class="buttons-container">
@@ -354,15 +363,19 @@
         <div
           class="d-flex flex-column col-lg-5 d-none d-lg-block justify-content-center ms-5 p-3"
         >
-          <div class="skills-container ms-5 mt-5" id="skillsContainer"></div>
+          <div
+            class="skills-container ms-5 mt-5"
+            id="skillsContainer"
+            data-aos="fade-left"
+          ></div>
         </div>
       </div>
     </div>
 
     <div class="contact-container d-flex flex-row" id="contact-section">
       <div class="contact-section col-lg-10 justify-content-center">
-        <h2>Let's get in touch!</h2>
-        <p>
+        <h2 data-aos="fade-down">Let's get in touch!</h2>
+        <p data-aos="fade-up">
           I am excited to hear from you and would love to connect. If you have a
           question, a project idea, or want to say hello, please email me. I am
           open to networking, collaborating, and starting new ventures, so don't
@@ -370,7 +383,7 @@
           opportunities. I am available and eager to hear back from you. So,
           let's connect and get started!
         </p>
-        <h4>
+        <h4 data-aos="fade-right">
           <i class="fa-solid fa-square-envelope fa-lg"></i>
           Email
           <a href="mailto:casa.danielle@icloud.com" title="Danielle's Email"
@@ -382,6 +395,7 @@
         class="row d-none d-lg-flex flex-column col-lg-3 justify-content-center ms-5"
       >
         <img
+         data-aos="fade-up"
           class="img-fluid"
           src="src/images/network-monochromatic.png"
           alt="about img"

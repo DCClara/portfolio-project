@@ -103,3 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.documentElement.scrollTop = 0;
   });
 });
+//transitions
+AOS.init({
+  duration: 1000,
+  offset: 100,
+});
