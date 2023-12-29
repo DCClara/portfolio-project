@@ -12,6 +12,12 @@ body {
   margin: 0 auto;
   font-family: var(--default-font-family);
 }
+h2,
+h3,
+h4 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
 h2 {
   font-size: 40px;
   font-weight: 600;
@@ -73,6 +79,9 @@ footer .social-links i:hover {
 .hero h2 {
   color: var(--golden-color);
 }
+.hero p {
+  font-size: 1rem;
+}
 .hero-img {
   width: 350px;
   aspect-ratio: initial;
@@ -117,11 +126,11 @@ footer .social-links i:hover {
 }
 .project-container h2 {
   margin: 0;
-  color: var(--darkest-color);
+  color: var(--primary-color);
 }
 .project-container h4 {
   font-weight: 600;
-  color: var(--darkest-color);
+  color: var(--golden-color);
 }
 .project-container p {
   color: var(--secondary-color);
@@ -168,6 +177,9 @@ footer .social-links i:hover {
 .contact-container {
   background-color: var(--branding-color);
   padding: 150px 200px;
+}
+.contact-container h2 {
+  color: var(--primary-color);
 }
 .contact-container p {
   font-size: 25px;
