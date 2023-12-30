@@ -21,8 +21,8 @@ h4 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 40px;
   font-weight: 600;
+  
 }
 h3 {
   color: var(--darkest-color);
@@ -105,7 +105,7 @@ footer .social-links i:hover {
 .about-section {
   color: var(--paragraph-color);
   background: var(--backround-color);
-  padding: 150px 50px;
+  padding: 150px 0;
 }
 .about-text {
   padding: 0 50px;
@@ -113,6 +113,7 @@ footer .social-links i:hover {
 }
 .about-section h2 {
   color: var(--primary-color);
+  font-size: 40px;
 }
 .about-section p {
   font-size: 25px;
@@ -120,6 +121,28 @@ footer .social-links i:hover {
 .about-section a {
   text-decoration: none;
   color: var(--golden-color);
+}
+.skills-container {
+  padding: 100px 0 0;
+}
+.skills-container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.skill-card {
+  width: calc(100% / 10);
+  text-align: center;
+  margin: 14px ;
+}
+.skill-card p {
+  font-size: 14px;
+}
+
+.skill-icon img {
+  max-width: 60%;
+  
 }
 .project-container {
   padding: 150px 50px;
