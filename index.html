@@ -55,15 +55,14 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a href="/" data-aos="fade-right" title="Homepage">
-        <img
-          src="src/images/DCasa-logo.png"
-          alt="Danielle logo"
-          class="disabled logo d-none d-sm-block ms-5"
-        />
-      </a>
+      <img
+        data-aos="fade-right"
+        src="src/images/DCasa-logo.png"
+        alt="Danielle logo"
+        class="logo d-none d-sm-block ms-5"
+      />
       <button
-        class="navbar-toggler me-5"
+        class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -73,16 +72,20 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul data-aos="fade-right" class="navbar-nav text-center">
           <li class="nav-item active">
-            <a class="nav-link" href="#hero-section" title="Homepage">
+            <a class="nav-link" href="/" title="Homepage">
               Home
               <span class="sr-only" title="Current Homepage">(current)</span></a
             >
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#about-section" title="About Danielle"
+              >About</a
+            >
+          </li>
+          <li>
             <a
               class="nav-link"
               href="#project-section"
@@ -109,21 +112,24 @@
           <h1>Danielle Casa</h1>
           <h2>Junior Front-end Developer</h2>
           <h4>Based in United Sates, Florida</h4>
-          <p>
-            An adventure begins with a line of code, and every bug conquered is
-            a victory.
-          </p>
+
           <div class="d-none mt-4 d-md-flex" data-aos="fade-up">
             <a
               class="btn-branding text-center"
+              href="#about-section"
+              title="About Danielle Casa"
+              >About me</a
+            >
+            <a
+              class="btn-branding ms-5 text-center"
               href="#project-section"
-              title="My work"
-              >View Work</a
+              title="Danielle Casa's work"
+              >My Work</a
             >
             <a
               class="btn-branding ms-5 text-center"
               href="#contact-section"
-              title="Contact"
+              title="Contact Danielle Casa"
               >Contact Me</a
             >
           </div>
@@ -138,46 +144,48 @@
       </div>
     </div>
 
-    <div
-      class="about-section d-flex flex-row justify-content-center"
-      id="about-section"
-    >
-      <div
-        class="d-none d-lg-flex flex-column col-lg-3 justify-content-center"
-        data-aos="fade-right"
-      >
-        <img
-          class="img-fluid"
-          src="src/images/code-development-isometric.png"
-          alt="about img"
-        />
+    <section class="about-section" id="about-section">
+      <div class="d-flex flex-row justify-content-center mb-5">
+        <div
+          class="d-none d-lg-flex flex-column col-lg-3 justify-content-center"
+          data-aos="fade-right"
+        >
+          <img
+            class="img-fluid"
+            src="src/images/code-development-isometric.png"
+            alt="about img"
+          />
+        </div>
+        <div
+          class="about-text d-flex flex-column col-lg-8 justify-content-center"
+          data-aos="fade-up"
+        >
+          <h2 class="mb-2 mt-2" data-aos="fade-right">About Me</h2>
+          <p>
+            I am always eager to learn and improve my skills throughout my
+            career. I have a strong interest in coding and development, and I
+            would love to work in a team environment to expand my knowledge
+            further. I have gained a comprehensive understanding of development
+            by participating in the
+            <a
+              href="https://www.shecodes.io/graduates/91341-danielle-casa"
+              target="_blank"
+              title="SheCodes graduate page"
+              >SheCodes workshops</a
+            >. As a potential contributor, I am excited about the possibility of
+            working with you. I would be grateful for the opportunity to discuss
+            your coding requirements. You can review my portfolio or email me
+            <a href="mailto:casa.danielle@icloud.com" title="Danielle's Email"
+              >casa.danielle@icloud.com</a
+            >
+            to discuss a potential collaboration.
+          </p>
+        </div>
       </div>
-      <div
-        class="about-text d-flex flex-column col-lg-8 justify-content-center"
-        data-aos="fade-up"
-      >
-        <h2 class="mb-2 mt-2" data-aos="fade-right">About Me</h2>
-        <p>
-          I am always eager to learn and improve my skills throughout my career.
-          I have a strong interest in coding and development, and I would love
-          to work in a team environment to expand my knowledge further. I have
-          gained a comprehensive understanding of development by participating
-          in the
-          <a
-            href="https://www.shecodes.io/graduates/91341-danielle-casa"
-            target="_blank"
-            title="SheCodes graduate page"
-            >SheCodes workshops</a
-          >. As a potential contributor, I am excited about the possibility of
-          working with you. I would be grateful for the opportunity to discuss
-          your coding requirements. You can review my portfolio or email me
-          <a href="mailto:casa.danielle@icloud.com" title="Danielle's Email"
-            >casa.danielle@icloud.com</a
-          >
-          to discuss a potential collaboration.
-        </p>
-      </div>
-    </div>
+      <hr />
+      <h2 class="mt-5 text-center">Skills and Tools</h2>
+      <p class="text-center">The skills, tools, and technologies I use:</p>
+    </section>
 
     <div class="project-container" id="project-section">
       <h2 class="text-center mb-5" data-aos="fade-down">Check out my work</h2>
@@ -211,8 +219,8 @@
           /></a>
           <h4 class="text-center mt-3">AI Recipe Generator</h4>
           <p class="text-center">
-            HTML5, CSS3, Javascipt, multiple APIs, creating a
-            text-generating tool powered by AI
+            HTML5, CSS3, Javascipt, multiple APIs, creating a text-generating
+            tool powered by AI
           </p>
         </div>
         <div class="col-md-3">
@@ -229,7 +237,8 @@
           </a>
           <h4 class="text-center mt-3">World Clock</h4>
           <p class="text-center">
-            HTML5, CSS3, API, and JavaScript Timing Events, handling Date formats, and managing Time Zones
+            HTML5, CSS3, API, and JavaScript Timing Events, handling Date
+            formats, and managing Time Zones
           </p>
         </div>
         <div class="col-md-3">
@@ -245,11 +254,8 @@
             />
           </a>
           <h4 class="text-center mt-3">Live Weather</h4>
-          <p class="text-center">
-            HTML5, API, CSS3, Javascript, and Bootstrap
-          </p>
+          <p class="text-center">HTML5, API, CSS3, Javascript, and Bootstrap</p>
         </div>
-        
       </div>
 
       <div class="row mt-3" id="row2" style="display: none">
@@ -266,7 +272,9 @@
             />
           </a>
           <h4 class="text-center mt-3">Everglades Awareness</h4>
-          <p class="text-center">HTML5, CSS3, Flexbox, SEO, and it's Responsive</p>
+          <p class="text-center">
+            HTML5, CSS3, Flexbox, SEO, and it's Responsive
+          </p>
         </div>
         <div class="col-md-4">
           <a
@@ -388,11 +396,9 @@
           </div>
         </div>
         <div
-          class="d-flex flex-column col-lg-6 justify-content-center d-none d-md-block "
+          class="d-flex flex-column col-lg-6 justify-content-center d-none d-md-block"
         >
-        <h2 class="text-center mb-sm-0" data-aos="fade-down">
-            Technologies
-          </h2>
+          <h2 class="text-center mb-sm-0" data-aos="fade-down">Technologies</h2>
           <div
             class="skills-container p-5"
             id="skillsContainer"
