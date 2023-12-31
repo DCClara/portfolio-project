@@ -20,21 +20,12 @@ h4 {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
-h2 {
-  font-weight: 600;
-  
-}
-h3 {
-  color: var(--darkest-color);
-  font-size: 60px;
-}
 h4 {
   font-size: 35px;
   color: var(--backround-color);
 }
 p {
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 22px;
   color: var(--secondary-color);
 }
 nav {
@@ -115,11 +106,7 @@ footer .social-links i:hover {
   color: var(--primary-color);
   font-size: 40px;
 }
-.about-section p {
-  font-size: 25px;
-}
-.about-section a {
-  text-decoration: none;
+.about-section h3 {
   color: var(--golden-color);
 }
 .skills-container {
@@ -129,12 +116,11 @@ footer .social-links i:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
 }
 .skill-card {
   width: calc(100% / 10);
   text-align: center;
-  margin: 14px ;
+  margin: 14px;
 }
 .skill-card p {
   font-size: 14px;
@@ -142,7 +128,6 @@ footer .social-links i:hover {
 
 .skill-icon img {
   max-width: 60%;
-  
 }
 .project-container {
   padding: 150px 50px;
