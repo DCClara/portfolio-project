@@ -22,7 +22,8 @@ h4 {
 }
 h4 {
   font-size: 35px;
-  color: var(--backround-color);
+  color: var(--golden-color);
+  
 }
 p {
   font-size: 22px;
@@ -106,7 +107,7 @@ footer .social-links i:hover {
   color: var(--primary-color);
   font-size: 40px;
 }
-.about-section h3 {
+.about-section h4 {
   color: var(--golden-color);
 }
 .skills-container {
@@ -142,7 +143,7 @@ footer .social-links i:hover {
   color: var(--golden-color);
 }
 .project-container p {
-  color: var(--secondary-color);
+  font-size: 16px;
 }
 .project-container img {
   border-radius: 20px;
