@@ -23,7 +23,6 @@ h4 {
 h4 {
   font-size: 35px;
   color: var(--golden-color);
-  
 }
 p {
   font-size: 22px;
@@ -67,8 +66,9 @@ footer .social-links i:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 0px;
+  padding: 150px 50px;
 }
+
 .hero h2 {
   color: var(--golden-color);
 }
@@ -97,10 +97,9 @@ footer .social-links i:hover {
 .about-section {
   color: var(--paragraph-color);
   background: var(--backround-color);
-  padding: 150px 0;
+  padding: 150px 50px;
 }
 .about-text {
-  padding: 0 50px;
   margin-left: 20px;
 }
 .about-section h2 {
@@ -143,6 +142,7 @@ footer .social-links i:hover {
   color: var(--golden-color);
 }
 .project-container p {
+  text-align: center;
   font-size: 16px;
 }
 .project-container img {
@@ -158,35 +158,14 @@ footer .social-links i:hover {
 .project-container .btn-branding:hover {
   background-color: var(--secondary-color);
 }
-.certifications-section {
-  padding: 150px 50px;
-  background-color: var(--backround-color);
-}
-.certifications-section h2 {
-  color: var(--primary-color);
-}
-.carousel-container {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  border: none;
-}
+
 .image-container img {
   width: 100%;
   height: auto;
 }
 .contact-container {
-  background-color: var(--branding-color);
-  padding: 150px 200px;
+  background-color: var(--backround-color);
+  padding: 150px;
 }
 .contact-container h2 {
   color: var(--primary-color);
@@ -198,9 +177,7 @@ footer .social-links i:hover {
   text-decoration: none;
   color: var(--golden-color);
 }
-.resume-container {
-  background-color: var(--backround-color);
-}
+
 .page-end p {
   color: var(--branding-color);
   font-size: 20px;
@@ -235,12 +212,11 @@ footer .social-links i:hover {
   opacity: 1;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
   .btn-branding {
     padding: 5px;
   }
-}
-@media (max-width: 900px) {
+
   h1 {
     font-size: 40px;
   }
@@ -264,7 +240,7 @@ footer .social-links i:hover {
     font-size: 40px;
   }
   .hero {
-    padding: 0px;
+    padding: 80px;
   }
   .btn-branding {
     font-size: 12px;
@@ -273,24 +249,16 @@ footer .social-links i:hover {
   .about-section {
     padding: 40px;
   }
-  .certifications-section {
-    padding: 30px 20px;
-  }
   .contact-container {
     padding: 20px;
   }
   .contact-container p {
     font-size: 15px;
   }
-  .project-container {
-    padding: 20px;
-  }
+  
 }
 @media (max-width: 780px) {
-  .hero {
-    height: fit-content;
-    padding-top: 10px;
-  }
+ 
   .about-section {
     text-align: center;
     padding: 0;

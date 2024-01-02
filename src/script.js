@@ -1,26 +1,3 @@
-//carousel functions
-const carousel = document.getElementById("carousel");
-const prevButton = document.getElementById("left");
-const nextButton = document.getElementById("right");
-
-let currentIndex = 0;
-
-function showSlide(index) {
-  const totalSlides = document.querySelectorAll(".image-container img").length;
-  index = (index + totalSlides) % totalSlides;
-  const translateValue = -index * 100 + "%";
-  carousel.style.transform = "translateX(" + translateValue + ")";
-  currentIndex = index;
-}
-
-function prevSlide() {
-  showSlide(currentIndex - 1);
-}
-
-function nextSlide() {
-  showSlide(currentIndex + 1);
-}
-
 //Show more button functions
 document.getElementById("toggleButton").addEventListener("click", function () {
   var row2 = document.getElementById("row2");
