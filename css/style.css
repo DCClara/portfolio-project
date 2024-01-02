@@ -265,7 +265,6 @@ footer .social-links i:hover {
   }
   .about-section p {
     font-size: 18px;
-    text-indent: 0;
   }
   .skills-container {
     padding-top: 10px;
@@ -275,9 +274,6 @@ footer .social-links i:hover {
   }
   .project-container .col-md-4 {
     padding: 5px;
-  }
-  .contact-container p {
-    text-indent: 0;
   }
 }
 
@@ -293,7 +289,7 @@ footer .social-links i:hover {
   }
   .about-text {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .about-section p {
     font-size: 14px;
