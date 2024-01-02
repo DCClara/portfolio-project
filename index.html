@@ -54,8 +54,8 @@
       <button
         class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -103,7 +103,7 @@
           <h2>Junior Front-end Developer</h2>
           <h4>Based in United Sates, Florida</h4>
 
-          <div class="d-none mt-4 d-md-flex" data-aos="fade-up">
+          <div class="d-none mt-4 d-lg-flex" data-aos="fade-up">
             <a
               class="btn-branding text-center"
               href="#about-section"
@@ -136,9 +136,12 @@
 
     <section class="about-section" id="about-section">
       <h2 class="text-center" data-aos="fade-right">about me</h2>
-      <div class="d-flex flex-row justify-content-center mb-5">
+      <h4 class="text-center mb-5" data-aos="fade-left">
+        Personally and professionally
+      </h4>
+      <div class="d-flex flex-row justify-content-center space-between">
         <div
-          class="d-none d-lg-flex flex-column col-lg-4 justify-content-center"
+          class="d-none d-lg-flex flex-column col-lg-4 me-3 justify-content-center"
           data-aos="fade-right"
         >
           <img
@@ -148,7 +151,7 @@
           />
         </div>
         <div
-          class="about-text d-flex flex-column col-lg-7 justify-content-center"
+          class="about-text d-flex flex-column col-lg-8 justify-content-center"
           data-aos="fade-up"
         >
           <p>
@@ -178,7 +181,10 @@
         <h4 class="text-center mb-5" data-aos="fade-left">
           The skills, tools, and technologies I use:
         </h4>
-        <div class="skills-container-wrap" data-aos="fade-up">
+        <div
+          class="skills-container-wrap justify-content-center"
+          data-aos="fade-up"
+        >
           <div class="skill-card">
             <div class="skill-icon">
               <img src="src/images/html-icon.png" alt="HTML" />
@@ -264,9 +270,10 @@
     </section>
 
     <div class="project-container" id="project-section">
-      <h2 class="text-center mb-5" data-aos="fade-down">Check out my work</h2>
+      <h2 class="text-center" data-aos="fade-right">Work</h2>
+      <h4 class="text-center mb-5" data-aos="fade-down">Check out my work</h4>
       <div class="row" id="row1" data-aos="fade-right">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://react-dictionary-app-dc.netlify.app/"
             target="_blank"
@@ -285,7 +292,7 @@
             the perfect tool for anyone looking to expand their vocabulary.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://ai-recipesgenerator.netlify.app/"
             target="_blank"
@@ -305,7 +312,7 @@
             can provide recipes based on user input.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://shecodes-project-world-clock.netlify.app"
             target="_blank"
@@ -329,7 +336,7 @@
       </div>
 
       <div class="row mt-3" id="row2" style="display: none">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://live-weather-app-location.netlify.app"
             target="_blank"
@@ -351,7 +358,7 @@
             accurate and easy to use.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://everglades-site.netlify.app"
             target="_blank"
@@ -374,7 +381,7 @@
           </p>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://www.shecodes.io/cohorts/shecodes-basics-add-on-1de07ed5-474a-47d1-b196-a7821b1e16f9/projects/1785595"
             target="_blank"
@@ -394,7 +401,7 @@
             improve user experience and interactivity on the website.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <a
             href="https://www.shecodes.io/cohorts/shecodes-basics-37a31b82-8e69-4bc2-b5fd-b3dea17fa928/projects/1783953"
             target="_blank"
@@ -429,63 +436,68 @@
       </div>
     </div>
 
-    <div class="contact-container d-flex flex-row" id="contact-section">
-      <div class="contact-section col-lg-9 justify-content-center">
-        <h2 data-aos="fade-down">Let's get in touch!</h2>
-        <p data-aos="fade-up">
-          I am excited to hear from you and would love to connect. If you have a
-          question, a project idea, or want to say hello, please email me. I am
-          open to networking, collaborating, and starting new ventures, so don't
-          hesitate to reach out. Let's begin a conversation and explore new
-          opportunities. I am available and eager to hear back from you. So,
-          let's connect and get started!
-        </p>
-        <h4 data-aos="fade-right">
-          <i class="fa-solid fa-square-envelope fa-lg"></i>
-          Email
-          <a href="mailto:casa.danielle@icloud.com" title="Danielle's Email"
-            >casa.danielle@icloud.com</a
-          >
-        </h4>
-      </div>
-      <div
-        class="row d-none d-lg-flex flex-column col-lg-2 justify-content-center ms-5"
-      >
-        <img
-          data-aos="fade-up"
-          class="img-fluid"
-          src="src/images/network-monochromatic.png"
-          alt="about img"
-        />
-      </div>
-    </div>
-    
-    <footer>
-      <div class="container-flex larger footer bottom p-5">
-        <div class="social-links">
-          <a
-            href="mailto:casa.danielle@icloud.com"
-            target="_blank"
-            title="Danielle's Email"
-            ><i class="fa-solid fa-square-envelope fa-lg"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/daniellec-casa/"
-            target="_blank"
-            title="Danielle's LinkedIn profile"
-            ><i class="fa-brands fa-linkedin fa-lg"></i
-          ></a>
-          <a
-            href="https://github.com/DCClara"
-            target="_blank"
-            title="Danielle's GitHub profile"
-            ><i class="fa-brands fa-square-github fa-lg"></i
-          ></a>
+    <div class="contact-container">
+      <h2 class="text-center">Contact</h2>
+      <h4 data-aos="fade-down text-center">Let's get in touch!</h4>
+      <div class="d-flex flex-row justify-content-center" id="contact-section">
+        <div
+          class="row d-none d-lg-flex flex-column col-lg-4 justify-content-center"
+        >
+          <img
+            data-aos="fade-up"
+            class="img-fluid"
+            src="src/images/network-monochromatic.png"
+            alt="about img"
+          />
+        </div>
+        <div
+          class="contact-section justify-content-center flex-column col-lg-8"
+        >
+          <p data-aos="fade-up">
+            I am excited to hear from you and would love to connect. If you have
+            a question, a project idea, or want to say hello, please email me. I
+            am open to networking, collaborating, and starting new ventures, so
+            don't hesitate to reach out. Let's begin a conversation and explore
+            new opportunities. I am available and eager to hear back from you.
+            So, let's connect and get started!
+          </p>
         </div>
       </div>
-    </footer>
-    <button id="backToTopBtn" title="Back to Top">Back to top</button>
-    <div class="page-end mt-2">
+      <h3 class="" data-aos="fade-right">
+        <i class="fa-solid fa-square-envelope fa-lg"></i>
+        Email
+        <a href="mailto:casa.danielle@icloud.com" title="Danielle's Email"
+          >casa.danielle@icloud.com</a
+        >
+      </h3>
+
+      <footer>
+        <div class="container-flex larger footer bottom p-5">
+          <div class="social-links">
+            <a
+              href="mailto:casa.danielle@icloud.com"
+              target="_blank"
+              title="Danielle's Email"
+              ><i class="fa-solid fa-square-envelope fa-lg"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/daniellec-casa/"
+              target="_blank"
+              title="Danielle's LinkedIn profile"
+              ><i class="fa-brands fa-linkedin fa-lg"></i
+            ></a>
+            <a
+              href="https://github.com/DCClara"
+              target="_blank"
+              title="Danielle's GitHub profile"
+              ><i class="fa-brands fa-square-github fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="page-end">
       <p class="text-center">
         Coded by Danielle Casa 👩🏽‍💻 open-sourced on
         <a
@@ -502,7 +514,9 @@
           >Netlify</a
         >.
       </p>
+      <button id="backToTopBtn" title="Back to Top">Back to top</button>
     </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>
