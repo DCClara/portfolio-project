@@ -129,6 +129,7 @@ footer .social-links i:hover {
 }
 .skill-card p {
   font-size: 14px;
+  margin-top: 5px;
 }
 .skill-icon img {
   max-width: 60%;
@@ -195,15 +196,19 @@ footer .social-links i:hover {
   text-decoration: none;
   color: var(--golden-color);
 }
+.page-end {
+  background-color: var(--branding-color);
+  
+}
 .page-end p {
-  color: var(--branding-color);
+  color: var(--primary-color);
   font-size: 20px;
   padding: 5px;
 }
 .page-end a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--darkest-color);
+  color: var(--golden-color);
 }
 .page-end a:hover {
   color: var(--golden-color);
@@ -256,6 +261,7 @@ footer .social-links i:hover {
     font-size: 20px;
   }
 }
+
 @media (max-width: 769px) {
   .about-section {
     padding-top: 60px;
@@ -281,6 +287,9 @@ footer .social-links i:hover {
   footer .social-links a {
     font-size: 25px;
   }
+  .hero {
+    padding: 40px;
+  }
   .about-section h2 {
     font-size: 25px;
   }
@@ -295,7 +304,10 @@ footer .social-links i:hover {
     font-size: 14px;
   }
   .skill-card p {
-    font-size: 10px;
+    font-size: 8px;
+  }
+  .project-container {
+    padding: 60px 50px;
   }
   .project-container h2 {
     font-size: 25px;
